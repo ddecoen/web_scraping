@@ -5,4 +5,4 @@ Repo for WebScraping Assignment using Go
 
 1. Leverage Go's standard library
 2. Use Colly framework for webscraping https://github.com/gocolly/colly
-3. Focus of the webscraping is **Wikipedia** for intelligent systems and robotics
+3. Focus of the webscraping is ***Wikipedia*** for intelligent systems and robotics
