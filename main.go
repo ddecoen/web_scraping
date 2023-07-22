@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"log"
 	"strings"
+	"time"
 
 	"github.com/gocolly/colly/v2"
 )
@@ -40,6 +41,9 @@ func removeStopwords(tokens []string) []string {
 }
 
 func main() {
+	// Time the code
+	startTime := time.Now()
+
 	// Create a new collector using colly
 	c := colly.NewCollector()
 
@@ -106,4 +110,9 @@ func main() {
 	}
 
 	fmt.Println("Data saved to items.jl")
+
+	endTime := time.Now()
+	executionTime := endTime.Sub(startTime)
+
+	fmt.Printf("Execution time: %s\n", executionTime)
 }
